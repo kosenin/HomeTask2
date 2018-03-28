@@ -5,22 +5,19 @@ package BasicShapes;
  */
 public class BasicShape {
 
-    public double dimensionOne;
-    public double dimensionTwo;
+    protected double dimensionOne;
+    protected double dimensionTwo;
 
-   public BasicShape(double parameterOne, double parameterTwo)
-    {
+    protected BasicShape(double parameterOne, double parameterTwo) {
         this.dimensionOne = parameterOne;
         this.dimensionTwo = parameterTwo;
     }
 
-    public BasicShape(double parameterOne)
-    {
+    protected BasicShape(double parameterOne) {
         this.dimensionOne = parameterOne;
     }
 
-    public void area()
-    {
+    public void area() {
 
     }
 

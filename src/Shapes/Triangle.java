@@ -9,6 +9,6 @@ public class Triangle extends BasicShape {
     }
 
     public void area() {
-        System.out.println("Area of the given Triangle is " + 0.5*dimensionOne*dimensionTwo);
+        System.out.println("Area of the given Triangle is " + 0.5 * dimensionOne * dimensionTwo);
     }
 }
