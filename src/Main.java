@@ -1,3 +1,4 @@
+import BasicShapes.BasicShape;
 import Shapes.Round;
 import Shapes.Square;
 import Shapes.Triangle;
@@ -13,8 +14,8 @@ public class Main {
 
 
     int chooseParameter;
-    int firstParameter;
-    int secondParameter;
+    double first;
+    double second;
 
     try {
         System.out.println("Choose your shape: 1 for Square, 2 for Round, 3 for Triangle");
@@ -23,28 +24,28 @@ public class Main {
         if(chooseParameter==1)
         {
             System.out.println("Put in width and length of your Square");
-            firstParameter = scanner.nextInt();
-            secondParameter = scanner.nextInt();
-            Square square = new Square(firstParameter,secondParameter);
-            System.out.println(square.square(firstParameter,secondParameter));
+            first = scanner.nextDouble();
+            second = scanner.nextDouble();
+            Square square = new Square(first,second);
+            square.area();
         }
 
         else if (chooseParameter == 2)
         {
             System.out.println("Put in radius of your Round");
-            firstParameter = scanner.nextInt();
-            Round round = new Round(firstParameter);
-            System.out.println(round.square(firstParameter));
+            first = scanner.nextDouble();
+            Round round = new Round(first);
+            round.area();
         }
 
         else if (chooseParameter == 3)
         {
             System.out.println("Put in ground and height of your Triangle");
-            firstParameter = scanner.nextInt();
-            secondParameter = scanner.nextInt();
+            first = scanner.nextDouble();
+            second = scanner.nextDouble();
 
-            Triangle triangle = new Triangle(firstParameter,secondParameter);
-            System.out.println(triangle.square(firstParameter,secondParameter));
+            Triangle triangle = new Triangle(first,second);
+            triangle.area();
 
         }
     }

@@ -1,16 +1,15 @@
 package Shapes;
 
-import BasicShapes.FourPlaneShape;
+import BasicShapes.BasicShape;
 
-public class Square extends FourPlaneShape{
+public class Square extends BasicShape{
 
 
-    public Square(int length, int width) {
-        super(length, width);
+    public Square(double parameterOne, double parameterTwo) {
+        super(parameterOne, parameterTwo);
     }
 
-
-    public int square(int length, int width) {
-        return length * width;
+    public void area() {
+        System.out.println("Area of the given Square is " + dimensionOne*dimensionTwo);
     }
 }

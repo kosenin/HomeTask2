@@ -1,16 +1,19 @@
 package Shapes;
 
-import BasicShapes.RoundShape;
 
-public class Round extends RoundShape {
+import BasicShapes.BasicShape;
 
-    double PI = Math.PI;
+public class Round extends BasicShape {
 
-    public Round(int radius) {
-        super(radius);
+
+    public Round(double parameterOne) {
+        super(parameterOne);
     }
 
-    public double square(int radius) {
-        return (radius * radius) * PI;
+
+   public void area() {
+        System.out.println("Area of the given Round is " + Math.sqrt(dimensionOne) * Math.PI);
+
+
     }
 }

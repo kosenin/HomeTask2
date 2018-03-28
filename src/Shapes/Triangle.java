@@ -1,15 +1,14 @@
 package Shapes;
 
-import BasicShapes.ThreePlaneShape;
+import BasicShapes.BasicShape;
 
-public class Triangle extends ThreePlaneShape{
+public class Triangle extends BasicShape {
 
-    public Triangle(int height, int ground) {
-        super(height, ground);
+    public Triangle(double parameterOne, double parameterTwo) {
+        super(parameterOne, parameterTwo);
     }
 
-
-    public double square(int height, int ground) {
-        return 0.5 * height*ground;
+    public void area() {
+        System.out.println("Area of the given Triangle is " + 0.5*dimensionOne*dimensionTwo);
     }
 }
