@@ -12,7 +12,7 @@ public class Round extends BasicShape {
 
 
     public void area() {
-        System.out.println("Area of the given Round is " + Math.sqrt(dimensionOne) * Math.PI);
+        System.out.println("Area of the given Round is " + Math.pow(dimensionOne,2) * Math.PI);
 
 
     }
